@@ -8,6 +8,10 @@ Web Toy project
 ## 개발환경
 ubuntu 16.04
 
+node js
+
+mongodb
+
 ## 구성
 - 형용사 입력받는 페이지
   - 닉네임 만드는 데 쓰일 형용사를 입력받는다
