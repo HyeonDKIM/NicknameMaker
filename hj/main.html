@@ -6,12 +6,15 @@
 </header>
 
 <body>
-    <h2 style="margin-left:100px"> 닉네임 생성기 </h2>
-    <form>
-        <p style="margin-left:100px">필수 글자 입력 (공백 가능)</p>
-        <input type="text" name="name" style="margin-left:100px">
-        <input type="submit" value="제출" style="margin-left:10px">
+    <h2 style="margin-left:100px"> 닉네임 생성기를 위한 형용사 입력기 </h2>
+    <form name="GetForm" onsubmit="return FormChecker" action="/submit" method="post">
+        <p style="margin-left:100px"> 입력해주세요! </p>
+        <input type="text" id="GetLetter" name="GetLetter" style="margin-left:100px" required>
+        <input type="submit" value="제출" onclick="GetLetterByUser(document.getElementById('GetLetter'))" style="margin-left:10px">
     </form>
+
+    
+    <script src="js/resources.js"></script>
 </body>
 
 </html>
