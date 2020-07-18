@@ -1,5 +1,5 @@
 # NicknameMaker
-Web Toy project
+Web Toy project (2020. 07. 18 ~ )
 
 그냥 심심해서 .. ....
 
@@ -20,3 +20,5 @@ mongodb
 - 닉네임제조기
   - ㅈㄱㄴ
 
+## 할 일
+- heroku ,, ,,,...,  ,... 배포해서 형용사 입력받기 ,,,..
