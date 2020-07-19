@@ -4,6 +4,8 @@ const app = express();
 const mongoose = require('mongoose');
 const fs = require('fs')
 
+var port = process.env.PORT || 3100
+
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
