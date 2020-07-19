@@ -17,7 +17,7 @@ app.get('/', function(req, res){
     });
 });
 
-mongoose.connect('mongodb://localhost/letters');
+mongoose.connect(process.env.MONGODB_URI);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection err'));
 db.once('open', function callback(){
@@ -32,7 +32,7 @@ app.post('/submit', function(req, res){
     var LetterData = {
         "res": GetLetter
     }
-    db.collection('letter').insertOne(LetterData, function(err, col){
+    db.collection('letters').insertOne(LetterData, function(err, col){
         if (err) throw err;
         console.log("Record inserted");
     });
@@ -40,6 +40,6 @@ app.post('/submit', function(req, res){
 })
 
 
-app.listen(3100, function(){
+app.listen(port, function(){
     console.log('3100 port open for test server')
 });
