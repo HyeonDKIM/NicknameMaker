@@ -6,9 +6,15 @@
 </header>
 
 <body>
-    <h2 style="margin-left:100px"> 닉네임 생성기를 위한 형용사 입력기 </h2>
+    <h2 style="margin-left:100px"> 닉네임/별명 생성기를 위한 형용사/명사 입력기 </h2>
     <form name="GetForm" onsubmit="return FormChecker" action="/submit" method="post">
-        <p style="margin-left:100px"> 입력해주세요! </p>
+        <p style="margin-left:100px"> 자유롭게 입력해주세요! </p>
+        <p style="margin-left:100px"> 욕설은 안돼요! 걸러내기 힘듭니다 ㅜㅡㅜ </p>
+        <p style="margin-left:100px"> 예시 1) 사우나수건도둑 OOO </p>
+        <p style="margin-left:100px"> 예시 2) 존예그자체인 OOO </p>
+        <p style="margin-left:100px"> 예시 3) 최종학력피자스쿨 OOO </p>
+        <p style="margin-left:100px"> 예시 4) 최강 OOO </p>
+        <p style="margin-left:100px"> OOO 앞의 형용사/명사만 입력해주세요! </p>
         <input type="text" id="GetLetter" name="GetLetter" style="margin-left:100px" required>
         <input type="submit" value="제출" onclick="GetLetterByUser(document.getElementById('GetLetter'))" style="margin-left:10px">
     </form>
