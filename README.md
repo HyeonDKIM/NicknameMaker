@@ -22,3 +22,4 @@ mongodb
 
 ## 할 일
 - heroku ,, ,,,...,  ,... 배포해서 형용사 입력받기 ,,,..
+- https://thawing-plains-39894.herokuapp.com/main.html
