@@ -32,11 +32,16 @@ app.post('/submit', function(req, res){
     var LetterData = {
         "res": GetLetter
     }
-    db.collection('letters').insertOne(LetterData, function(err, col){
-        if (err) throw err;
-        console.log("Record inserted");
-    });
-    return res.redirect('submit_success.html');
+    if (GetLetter.length == 1 ){
+        return res.redirect('submit_fail.html');
+    }
+    else{
+        db.collection('letters').insertOne(LetterData, function(err, col){
+            if (err) throw err;
+            console.log("Record inserted");
+        });
+        return res.redirect('submit_success.html');
+    }
 })
 
 
